@@ -1,0 +1,25 @@
+#menu #text {
+    cursor: pointer;
+}
+
+#menu ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+    display: block;
+}
+
+#menu #text::before {
+    content: '▼ ';
+}
+
+#menu.close ul {
+    display: none;
+}
+
+#menu.close #text::before {
+
+    content: '▶ ';
+    font-size: 80%;
+    color: green;
+}

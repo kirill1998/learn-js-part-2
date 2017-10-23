@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+    <div id="container">
+        <div class="pane">
+            <button class="remove-button">[x]</button>
+            <h3>Лошадь</h3>
+            <p>Домашняя </p>
+        </div>
+        <div class="pane">
+            <button class="remove-button">[x]</button>
+            <h3>Осёл</h3>
+            <p>Домашний осёл или ишак — одомашненный подвид дикого осла, сыгравший важную историческую роль в развитии хозяйства и культуры человека. Все одомашненные ослы относятся к африканским ослам.</p>
+        </div>
+        <div class="pane">
+            <button class="remove-button">[x]</button>
+            <h3>Корова, а также пара слов о диком быке, о волах и о тёлках. </h3>
+            <p>Коро́ва — самка домашнего быка, одомашненного подвида дикого быка, парнокопытного жвачного животного семейства полорогих. Самцы вида называются быками, молодняк — телятами, кастрированные самцы — волами. Молодых (до первой стельности) самок называют тёлками.
+            </p>
+        </div>
+    </div>
+    <script>
+    var buttons = document.getElementsByClassName("remove-button");
+    var container = document.getElementById("container");
+
+    container.onclick = function(event) {
+        var target = event.target;
+        if (target.className == "remove-button") {
+            var el = target.parentNode;
+            el.style.display = "none";
+        }
+    };
+    </script>
+</body>
+
+</html>
